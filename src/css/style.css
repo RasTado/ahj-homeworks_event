@@ -1,0 +1,60 @@
+body {
+  color: #444444;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #444444;
+  height: 40px;
+}
+
+form {
+  display: flex;
+  gap: 4px;
+  padding-right: 16px;
+}
+
+span {
+  padding: 0px 4px;
+}
+
+td {
+  width: 14vw;
+  height: 14vw;
+  border: 1px solid black;
+  cursor: url("../img/hammer.cur"), default;
+}
+
+td:hover {
+  background-color: rgba(120, 120, 120, 0.113);
+}
+
+td:active {
+  background-color: rgb(238, 11, 11);
+}
+
+.troll {
+  background: center no-repeat url("../img/goblin.png");
+  /* background-size: 95%; */
+  animation: trollup infinite alternate;
+  animation-duration: 500ms;
+}
+
+.troll:hover {
+  background-color: lightcoral;
+}
+
+.troll:active {
+  background-color: rgb(238, 11, 11);
+}
+
+@keyframes trollup {
+  from {
+    background-size: 0%;
+  }
+
+  to {
+    background-size: 100%;
+  }
+}
